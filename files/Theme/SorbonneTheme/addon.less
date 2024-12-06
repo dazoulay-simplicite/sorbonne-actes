@@ -1,0 +1,164 @@
+@theme-bleu: #000091;
+@theme-bleu-clair: #4949C8;
+@theme-rouge: #E1000F;
+@theme-jaune: #FFFFDD;
+@theme-gris-clair: #EDEDED;
+@theme-gris-moyen: #606060;
+@theme-gris-fonce: #3A3A3A;
+
+a , a:hover, a:active, a:focus {
+	color: @theme-bleu;
+}
+
+.top-bar {
+	padding: 1rem;
+	box-shadow: 0 0 1rem #c0c0c0;
+	height: 5rem;
+}
+
+.middle-bar {
+	top: 5rem;
+}
+
+.footer-bar, .footer {
+	a {
+		&:focus, &:hover {
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+}
+
+#menu, #work {
+	padding: 1rem;
+}
+
+#menu {
+	border-right: solid .0625rem @theme-gris-clair;
+}
+
+#work {
+	border-bottom: solid .0625rem @theme-gris-clair;
+}
+
+@media screen and (min-width: 768px) {
+	.left-sidebar.minified:not(.hover) {
+		padding: 0.25rem !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header .logo img {
+		min-width: auto;
+	}
+}
+
+.list-shortcuts .item {
+	background: white;
+	color: @theme-bleu;
+	border: solid 1px @theme-gris-clair;
+	border-bottom: solid .15rem @theme-bleu;
+	border-radius: 0;
+}
+
+.badge, ul.main-menu .badge, .card-header .badge, .treeview .badge {
+	background: @theme-jaune;
+	color: black;
+}
+
+.btn {
+	border-radius: 0 !important;
+}
+
+.btn-plus, .btn-icon, .btn-extend {
+	background: transparent;
+}
+
+.form-control, .select2-container--bootstrap .select2-selection {
+	border: none 0;
+	border-bottom: solid .15rem @theme-gris-moyen;
+}
+
+textarea.form-control {
+	border-top: solid .0625rem @theme-gris-moyen;
+	border-left: solid .0625rem @theme-gris-moyen;
+	border-right: solid .0625rem @theme-gris-moyen;
+}
+
+.search-bar {
+	.btn-secondary {
+		background: @theme-bleu;
+		color: white;
+		margin-left: -1rem;
+	}
+	.btn-icon {
+		color: @theme-bleu;
+	}
+}
+
+.header .searchbox {
+	background: transparent;
+}
+
+.logged-scope .scope-icon > * {
+	border-radius: 0;
+	font-size: 1rem;
+}
+
+.logged-scope .scope-name, .logged-user .user-name {
+	font-size: 1rem;
+}
+
+.card-header h4 {
+	font-size: 1rem;
+}
+
+.index {
+	border: none 0;
+}
+
+.js-search {
+	background: @theme-bleu !important;
+	color: white !important;
+}
+.js-search-open, .js-search-scan {
+	color: @theme-bleu !important;
+}
+
+.header .searchbox input {
+	height: auto;
+	min-height: unset;
+	background: #F7F7F7;
+	border-radius: 0;
+	border: none 0;
+	height: 100%;
+	border-bottom: solid .15rem @theme-gris-moyen;
+	&:hover {
+		background: #F7F7F7;
+	}
+}
+
+.table > thead > tr.head > td, .table > thead > tr.head > th {
+	border-bottom: solid 0.12rem @theme-gris-moyen;
+}
+
+.table > thead > tr.search > th {
+	padding: 0.33rem;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-link.active:focus, .nav-tabs .nav-link.active:hover {
+	border-top: solid .15rem @theme-bleu;
+	border-radius: 0;
+}
+
+.form-areas .card.panel-list {
+	border: none 0;
+	box-shadow: none;
+	margin: -1rem;
+}
+
+.crosstab .table thead {
+	tr, th {
+		border-bottom: solid 0.12rem @theme-gris-moyen !important;
+	}
+}
